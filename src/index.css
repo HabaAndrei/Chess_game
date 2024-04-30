@@ -11,3 +11,94 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.alb, .negru, .verde{
+  content: "\2655";
+  font-size: 45px;
+  padding-left: 10px;
+  line-height: 40px;
+  width: 50px; 
+  height: 50px;
+  text-align: center; 
+  /* font-size: 16px; */
+  cursor: pointer;
+}
+
+.alb {
+  background-color: #f0d9b5;
+}
+
+.negru {
+  background-color: #b58863;
+  /* color: white; */
+}
+.verde {
+  background-color: green;
+  /* color: white; */
+}
+
+.modalDinamic{
+  max-height: 300px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.toataPagina{
+  display: flex;
+  flex-direction: rows;
+  height: 100vh;
+  margin: 20px;
+}
+.parteaUnu, .parteaTrei{
+  flex: 15%
+}
+.parteaDoi{
+  flex: 70%;
+  text-align: center; 
+}
+
+.tablaDeSah {
+  display: inline-block;
+}
+.parteaTrei{
+  display: flex;
+  flex-direction: column;
+}
+.listaAlb, .listaNegru{
+  flex: 50%;
+  overflow-y: auto;
+}
+
+.listaAlb::-webkit-scrollbar, .listaNegru::-webkit-scrollbar, .toataPagina::-webkit-scrollbar  {
+  width: 12px;
+}
+
+.listaAlb::-webkit-scrollbar-thumb, .listaNegru::-webkit-scrollbar-thumb, .toataPagina::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.listaAlb::-webkit-scrollbar-thumb:hover, .listaNegru::-webkit-scrollbar-thumb:hover, .toataPagina::-webkit-scrollbar-thumb:hover   {
+  background-color: #555;
+}
+.piesaDeAdaugat{
+  cursor: pointer;
+}
+
+.parteaUnu, .parteaDoi, .parteaTrei{
+  text-align: center;
+
+}
+.parteaUnu{
+  align-content: center;
+}
+
+.alertaInPagina{
+  position: fixed;
+  top: 50px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 10px;
+  border-radius: 4px;
+}
